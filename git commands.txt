@@ -1,0 +1,134 @@
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ touch alpha.txt
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ notepad alpha.txt
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        alpha.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git add .
+
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   alpha.txt
+
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git commit -m"beta gamma"
+[master (root-commit) b6d5b52] beta gamma
+ 1 file changed, 1 insertion(+)
+ create mode 100644 alpha.txt
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git log
+commit b6d5b52d0d37be1b51adb7b41f009247eaa3d547 (HEAD -> master)
+Author: sunil <sunilingle250@gmail.com>
+Date:   Thu Dec 29 12:53:38 2022 +0530
+
+    beta gamma
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ touch beta.txt
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ notepad beta.txt
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ notepad alpha.txt
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   alpha.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        beta.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git add .
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git commit -m "alpha gama"
+[master 27e1324] alpha gama
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ create mode 100644 beta.txt
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git remote add origin https://github.com/sunilingle25/firstrepo.git
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git remote -v
+origin  https://github.com/sunilingle25/firstrepo.git (fetch)
+origin  https://github.com/sunilingle25/firstrepo.git (push)
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 487 bytes | 487.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sunilingle25/firstrepo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git add .
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git commit -m "add folder"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git add .
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git commit -m "add folder"
+[master 196227d] add folder
+ 1 file changed, 14 insertions(+)
+ create mode 100644 git demo/SQLQuery1.sql
+
+Hp@DESKTOP-TA9GCMQ MINGW64 ~/git_demo/firstrepo (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 604 bytes | 604.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sunilingle25/firstrepo.git
+   27e1324..196227d  master -> master
+branch 'master' set up to track 'origin/master'.
+
+
