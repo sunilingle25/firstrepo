@@ -1,0 +1,14 @@
+create database players;;
+create table Indian_team(jersy_no int,name varchar(30),cat varchar(10));
+insert into Indian_team  values (1,'kL_rahul','batsman');
+insert into Indian_team  values (2,'Arshdeep','bowling');
+insert into Indian_team  values (3,'chahal','bowling');
+insert into Indian_team  values (7,'MS_Dhoni','batsman');
+insert into Indian_team  values (8,'Ravindra','AllR');
+insert into Indian_team  values (10,'Tendulkar','batsman');
+insert into Indian_team  values (14,'Sanju','batsman');
+insert into Indian_team  values (15,'B_Kumar','Bowling');
+insert into Indian_team  values (17,'R_pant','batsman');
+insert into Indian_team  values (18,'Viratkohli','batsman');
+insert into Indian_team  values (19,'DK','batsman');
+select * from Indian_team;
